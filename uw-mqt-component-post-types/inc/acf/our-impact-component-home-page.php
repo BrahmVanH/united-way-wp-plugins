@@ -1,4 +1,7 @@
 <?php
+
+
+
 if (!defined('ABSPATH')) {
   exit;
 }
@@ -16,31 +19,31 @@ if (function_exists('acf_add_local_field_group')):
     'title' => 'Our Impact Fields',
     'fields' => [
       [
-        'key' => 'field_title',
+        'key' => 'field_our_impact_component_home_page_title',
         'label' => 'Title',
         'name' => 'title',
         'type' => 'text'
       ],
       [
-        'key' => 'field_text',
+        'key' => 'field_our_impact_component_home_page_text',
         'label' => 'Text',
         'name' => 'text',
         'type' => 'textarea'
       ],
       [
-        'key' => 'field_bg',
+        'key' => 'field_our_impact_component_home_page_bg',
         'label' => 'Background Image',
         'name' => 'bg',
         'type' => 'image'
       ],
       [
-        'key' => 'field_bg_mobile',
+        'key' => 'field_our_impact_component_home_page_bg_mobile',
         'label' => 'Mobile Background Image',
         'name' => 'bgMobile',
         'type' => 'image'
       ],
       [
-        'key' => 'field_button_text',
+        'key' => 'field_button_our_impact_component_home_page_text',
         'label' => 'Button Text',
         'name' => 'buttonText',
         'type' => 'text'
@@ -51,7 +54,7 @@ if (function_exists('acf_add_local_field_group')):
         [
           'param' => 'post_type',
           'operator' => '==',
-          'value' => 'our_impact_home_page'  // Make sure this matches EXACTLY with your post type registration
+          'value' => OUR_IMPACT_COMPONENT_HOME_PAGE_POST_TYPE_NAME  // Make sure this matches EXACTLY with your post type registration
         ]
       ]
     ],

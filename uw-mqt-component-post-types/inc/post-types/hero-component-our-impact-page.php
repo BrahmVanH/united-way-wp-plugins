@@ -1,4 +1,9 @@
 <?php
+
+
+
+
+
 if (!defined('ABSPATH'))
   exit;
 
@@ -34,6 +39,6 @@ function register_custom_post_types_hero_component_our_impact_page()
     'rewrite' => ['slug' => 'hero-component-our-impact-page'],
   ];
 
-  register_post_type('hero_component_our_impact_page', $args);
+  register_post_type(HERO_COMPONENT_OUR_IMPACT_PAGE_POST_TYPE_NAME, $args);
 }
 add_action('init', 'register_custom_post_types_hero_component_our_impact_page');

@@ -1,4 +1,7 @@
 <?php
+
+
+
 if (!defined('ABSPATH'))
   exit;
 
@@ -31,6 +34,6 @@ function register_custom_post_types_our_impact_home_page()
     'rewrite' => ['slug' => 'our-impact-component-home-page'],
   ];
 
-  register_post_type('our_impact_home_page', $args);
+  register_post_type(OUR_IMPACT_COMPONENT_HOME_PAGE_POST_TYPE_NAME, $args);
 }
 add_action('init', 'register_custom_post_types_our_impact_home_page');

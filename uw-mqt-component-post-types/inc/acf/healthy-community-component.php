@@ -1,12 +1,11 @@
 <?php
 
+
+
 if (!defined('ABSPATH')) {
   exit;
 }
 
-require_once plugin_dir_path(dirname(dirname(__FILE__))) . 'constants.php';
-
-// Add debugging
 add_action('admin_notices', function () {
   if (!function_exists('acf_add_local_field_group')) {
     echo '<div class="error"><p>ACF is not active!</p></div>';
@@ -15,35 +14,35 @@ add_action('admin_notices', function () {
 
 if (function_exists('acf_add_local_field_group')):
   acf_add_local_field_group([
-    'key' => 'group_hero_our_impact_page',  // Simplified key
-    'title' => 'Hero Component Fields',
+    'key' => 'group_healthy_community_component',  // Simplified key
+    'title' => 'Our Impact Fields',
     'fields' => [
       [
-        'key' => 'field_hero_our_impact_page_title',
+        'key' => 'field_healthy_community_component_title',
         'label' => 'Title',
         'name' => 'title',
         'type' => 'text'
       ],
       [
-        'key' => 'field_hero_our_impact_page_text',
+        'key' => 'field_healthy_community_component_text',
         'label' => 'Text',
         'name' => 'text',
         'type' => 'textarea'
       ],
       [
-        'key' => 'field_hero_our_impact_page_bg',
+        'key' => 'field_healthy_community_component_bg',
         'label' => 'Background Image',
         'name' => 'bg',
         'type' => 'image'
       ],
       [
-        'key' => 'field_hero_our_impact_page_bg_mobile',
-        'label' => 'Mobile Background Image',
-        'name' => 'bgMobile',
+        'key' => 'field_healthy_community_component_image',
+        'label' => 'Image',
+        'name' => 'image',
         'type' => 'image'
       ],
       [
-        'key' => 'field_hero_our_impact_page_button_text',
+        'key' => 'field_healthy_community_component_text',
         'label' => 'Button Text',
         'name' => 'buttonText',
         'type' => 'text'
@@ -54,11 +53,11 @@ if (function_exists('acf_add_local_field_group')):
         [
           'param' => 'post_type',
           'operator' => '==',
-          'value' => HERO_COMPONENT_OUR_IMPACT_PAGE_POST_TYPE_NAME  // Make sure this matches EXACTLY with your post type registration
+          'value' => HEALTHY_COMMUNITY_COMPONENT_OUR_IMPACT_PAGE_POST_TYPE_NAME  // Make sure this matches EXACTLY with your post type registration
         ]
       ]
     ],
-    'menu_order' => 3,
+    'menu_order' => 4,
     'position' => 'normal',
     'style' => 'default',
     'label_placement' => 'top',

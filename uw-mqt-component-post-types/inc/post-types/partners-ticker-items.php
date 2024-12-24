@@ -1,9 +1,13 @@
 <?php
+
+
+
+
 if (!defined('ABSPATH')) {
   exit;
 }
 
-function register_partners_ticker_items_post_type()
+function register_custom_post_types_partners_ticker_items_post_type()
 {
   $args = [
     'label' => 'Partners Ticker Items',
@@ -36,6 +40,6 @@ function register_partners_ticker_items_post_type()
     'rewrite' => ['slug' => 'partners-ticker'], // Change from '/' to something specific
   ];
 
-  register_post_type('partners_ticker_items', $args);
+  register_post_type(PARTNERS_TICKER_ITEMS_POST_TYPE_NAME, $args);
 }
-add_action('init', 'register_partners_ticker_items_post_type');
+add_action('init', 'register_custom_post_types_partners_ticker_items_post_type');
