@@ -20,6 +20,9 @@ require_once plugin_dir_path(__FILE__) . 'inc/post-types/healthy-community-compo
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/youth-opportunity-component.php';
 // require_once plugin_dir_path(__FILE__) . 'inc/post-types/financial-security-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/community-resiliency-component.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/four-pillars-preview-component.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/mobile-food-pantry-component.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/four-pillars-hero-component.php';
 
 
 // Add this debugging code temporarily
@@ -42,6 +45,10 @@ function uw_mqt_init_custom_fields()
     require_once plugin_dir_path(__FILE__) . 'inc/acf/youth-opportunity-component.php';
     // require_once plugin_dir_path(__FILE__) . 'inc/acf/financial-security-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/community-resiliency-component.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/four-pillars-preview-component.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/mobile-food-pantry-component.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/four-pillars-hero-component.php';
+
 
   }
 }
