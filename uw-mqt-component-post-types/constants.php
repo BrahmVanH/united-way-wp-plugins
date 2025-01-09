@@ -20,3 +20,5 @@ define('FOUR_PILLARS_PREVIEW_POST_TYPE_NAME', 'four_pillars_preview');
 define('MOBILE_FOOD_PANTRY_COMPONENT_POST_TYPE_NAME', 'mobile_food_pantry');
 
 define('FOUR_PILLARS_HERO_COMPONENT_POST_TYPE_NAME', 'four_pillars_hero');
+
+define('HOW_TO_CONTRIBUTE_COMPONENT_POST_TYPE_NAME', 'how_to_contribute');

@@ -23,6 +23,8 @@ require_once plugin_dir_path(__FILE__) . 'inc/post-types/community-resiliency-co
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/four-pillars-preview-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/mobile-food-pantry-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/four-pillars-hero-component.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/how-to-contribute-component.php';
+
 
 
 // Add this debugging code temporarily
@@ -48,8 +50,7 @@ function uw_mqt_init_custom_fields()
     require_once plugin_dir_path(__FILE__) . 'inc/acf/four-pillars-preview-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/mobile-food-pantry-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/four-pillars-hero-component.php';
-
-
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/how-to-contribute-component.php';
   }
 }
 
