@@ -41,6 +41,12 @@ if (function_exists('acf_add_local_field_group')):
         'label' => 'Mobile Background Image',
         'name' => 'bgMobile',
         'type' => 'image'
+      ],
+      [
+        'key' => 'field_hero_our_impact_page_button_text',
+        'label' => 'Button Text',
+        'name' => 'buttonText',
+        'type' => 'text'
       ]
     ],
     'location' => [

@@ -24,6 +24,13 @@ require_once plugin_dir_path(__FILE__) . 'inc/post-types/four-pillars-preview-co
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/mobile-food-pantry-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/four-pillars-hero-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/how-to-contribute-component.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/alice-report-page.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/alice-report-pdf.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/current-990-form-pdf.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/donor-privacy-policy-pdf.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/gift-acceptance-policy-pdf.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/admin-costs-pdf.php';
+
 
 
 
@@ -51,6 +58,12 @@ function uw_mqt_init_custom_fields()
     require_once plugin_dir_path(__FILE__) . 'inc/acf/mobile-food-pantry-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/four-pillars-hero-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/how-to-contribute-component.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/alice-report-page.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/alice-report-pdf.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/current-990-form-pdf.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/donor-privacy-policy-pdf.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/gift-acceptance-policy-pdf.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/admin-costs-pdf.php';
   }
 }
 
