@@ -31,3 +31,5 @@ define('CURRENT_990_FORM_PDF_POST_TYPE_NAME', 'current_990_form_pdf');
 define('DONOR_PRIVACY_POLICY_PDF_POST_TYPE_NAME', 'donor_privacy_pdf');
 define('GIFT_ACCEPTANCE_POLICY_PDF_POST_TYPE_NAME', 'gift_policy_pdf');
 define('ADMIN_COSTS_PDF_POST_TYPE_NAME', 'admin_costs_pdf');
+define('GIRL_SCOUTS_COMPONENT_POST_TYPE_NAME', 'girl_scouts_comp');
+define('YMCA_COMPONENT_POST_TYPE_NAME', 'ymca_comp');

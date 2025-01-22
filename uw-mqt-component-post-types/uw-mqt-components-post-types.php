@@ -30,7 +30,8 @@ require_once plugin_dir_path(__FILE__) . 'inc/post-types/current-990-form-pdf.ph
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/donor-privacy-policy-pdf.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/gift-acceptance-policy-pdf.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/admin-costs-pdf.php';
-
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/girl-scouts-component.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/ymca-component.php';
 
 
 
@@ -64,6 +65,8 @@ function uw_mqt_init_custom_fields()
     require_once plugin_dir_path(__FILE__) . 'inc/acf/donor-privacy-policy-pdf.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/gift-acceptance-policy-pdf.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/admin-costs-pdf.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/girl-scouts-component.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/ymca-component.php';
   }
 }
 
