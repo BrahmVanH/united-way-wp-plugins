@@ -33,3 +33,7 @@ define('GIFT_ACCEPTANCE_POLICY_PDF_POST_TYPE_NAME', 'gift_policy_pdf');
 define('ADMIN_COSTS_PDF_POST_TYPE_NAME', 'admin_costs_pdf');
 define('GIRL_SCOUTS_COMPONENT_POST_TYPE_NAME', 'girl_scouts_comp');
 define('YMCA_COMPONENT_POST_TYPE_NAME', 'ymca_comp');
+define('CAMPAIGN_TOOLKIT_PARTNER_ASSET_POST_TYPE_NAME', 'campaign_toolkit_asset');
+define('CAMPAIGN_TOOLKIT_WORKPLACE_PACKET_PDF_POST_TYPE_NAME', 'workplace_packet_pdf');
+define('CAMPAIGN_TOOLKIT_RADIO_PSA_AUDIO_POST_TYPE_NAME', 'radio_psa_audio');
+define('CAMPAIGN_TOOLKIT_RADIO_PSA_TRANSCRIPT_POST_TYPE_NAME', 'radio_psa_transcript');
