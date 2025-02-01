@@ -12,6 +12,7 @@ if (!defined('ABSPATH')) {
 
 
 // Load all post types
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/uw-contact-info.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/hero-component-our-impact-page.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/our-impact-component-home-page.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/our-impact-statistics-component.php';
@@ -32,7 +33,11 @@ require_once plugin_dir_path(__FILE__) . 'inc/post-types/gift-acceptance-policy-
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/admin-costs-pdf.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/girl-scouts-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/ymca-component.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/values-history.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/impact-carousel.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/campaign-toolkit-partner-asset.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/frequently-asked-questions.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/individuals-page-hero.php';
 
 
 
@@ -48,6 +53,7 @@ add_action('init', function () {
 function uw_mqt_init_custom_fields()
 {
   if (function_exists('acf_add_local_field_group')) {
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/uw-contact-info.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/hero-component-our-impact-page.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/our-impact-component-home-page.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/our-impact-statistics-component.php';
@@ -68,7 +74,11 @@ function uw_mqt_init_custom_fields()
     require_once plugin_dir_path(__FILE__) . 'inc/acf/admin-costs-pdf.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/girl-scouts-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/ymca-component.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/values-history.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/impact-carousel.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/campaign-toolkit-partner-asset.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/frequently-asked-questions.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/individuals-page-hero.php';
   }
 }
 

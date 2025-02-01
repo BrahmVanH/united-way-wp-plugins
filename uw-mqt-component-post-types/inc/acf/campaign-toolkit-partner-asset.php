@@ -1,4 +1,5 @@
 <?php
+require_once plugin_dir_path(dirname(dirname(__FILE__))) . 'constants.php';
 
 if (!defined('ABSPATH')) {
   exit;
@@ -12,85 +13,44 @@ add_action('admin_notices', function () {
 
 if (function_exists('acf_add_local_field_group')):
   acf_add_local_field_group([
-    'key' => 'group_campaign_toolkit_partner_asset',
-    'title' => 'Campaign Toolkit Partner Asset Fields',
+    'key' => 'group_campaign_toolkit_asset',
+    'title' => 'Campaign Toolkit Asset Fields',
     'fields' => [
       [
-        'key' => 'field_asset_type',
-        'label' => 'Asset Type',
-        'name' => 'asset_type',
-        'type' => 'select',
-        'required' => 1,
-        'choices' => [
-          'workplace_packet' => 'Workplace Packet',
-          'radio_psa_audio' => 'Radio PSA Audio',
-          'radio_psa_transcript' => 'Radio PSA Transcript',
-          'pledge_form' => 'Pledge Form'
-        ]
-      ],
-      [
-        'key' => 'field_pdf_file',
-        'label' => 'PDF File',
-        'name' => 'pdf_file',
+        'key' => 'field_workplace_packet',
+        'label' => 'Workplace Packet',
+        'name' => 'workplace_packet',
         'type' => 'file',
-        'required' => 0,
         'return_format' => 'array',
         'library' => 'all',
-        'mime_types' => 'pdf',
-        'conditional_logic' => [
-          [
-            [
-              'field' => 'field_asset_type',
-              'operator' => '==',
-              'value' => 'workplace_packet'
-            ]
-          ],
-          [
-            [
-              'field' => 'field_asset_type',
-              'operator' => '==',
-              'value' => 'pledge_form'
-            ]
-          ]
-        ]
+        'mime_types' => 'pdf'
       ],
       [
-        'key' => 'field_audio_file',
-        'label' => 'Audio File',
-        'name' => 'audio_file',
+        'key' => 'field_radio_psa_audio',
+        'label' => 'Radio PSA Audio',
+        'name' => 'radio_psa_audio',
         'type' => 'file',
-        'required' => 0,
         'return_format' => 'array',
         'library' => 'all',
-        'mime_types' => 'mp3',
-        'conditional_logic' => [
-          [
-            [
-              'field' => 'field_asset_type',
-              'operator' => '==',
-              'value' => 'radio_psa_audio'
-            ]
-          ]
-        ]
+        'mime_types' => 'mp3'
       ],
       [
-        'key' => 'field_transcript_file',
-        'label' => 'Transcript File',
-        'name' => 'transcript_file',
+        'key' => 'field_radio_psa_transcript',
+        'label' => 'Radio PSA Transcript',
+        'name' => 'radio_psa_transcript',
         'type' => 'file',
-        'required' => 0,
         'return_format' => 'array',
         'library' => 'all',
-        'mime_types' => 'txt',
-        'conditional_logic' => [
-          [
-            [
-              'field' => 'field_asset_type',
-              'operator' => '==',
-              'value' => 'radio_psa_transcript'
-            ]
-          ]
-        ]
+        'mime_types' => 'txt'
+      ],
+      [
+        'key' => 'field_pledge_form',
+        'label' => 'Pledge Form',
+        'name' => 'pledge_form',
+        'type' => 'file',
+        'return_format' => 'array',
+        'library' => 'all',
+        'mime_types' => 'pdf'
       ]
     ],
     'location' => [
@@ -98,7 +58,7 @@ if (function_exists('acf_add_local_field_group')):
         [
           'param' => 'post_type',
           'operator' => '==',
-          'value' => CAMPAIGN_TOOLKIT_PARTNER_ASSET_POST_TYPE_NAME
+          'value' => CAMPAIGN_TOOLKIT_ASSET_POST_TYPE_NAME
         ]
       ]
     ],

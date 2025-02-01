@@ -6,19 +6,19 @@ if (!defined('ABSPATH')) {
 
 require_once plugin_dir_path(dirname(dirname(__FILE__))) . 'constants.php';
 
-function register_campaign_toolkit_partner_asset_post_type()
+function register_campaign_toolkit_asset_post_type()
 {
   register_post_type(
-    CAMPAIGN_TOOLKIT_PARTNER_ASSET_POST_TYPE_NAME,
+    CAMPAIGN_TOOLKIT_ASSET_POST_TYPE_NAME,
     [
       'labels' => [
-        'name' => 'Campaign Toolkit Partner Assets',
-        'singular_name' => 'Campaign Toolkit Partner Asset'
+        'name' => 'Campaign Toolkit Assets',
+        'singular_name' => 'Campaign Toolkit Asset'
       ],
       'public' => true,
       'show_in_graphql' => true,
-      'graphql_single_name' => 'campaignToolkitPartnerAsset',
-      'graphql_plural_name' => 'campaignToolkitPartnerAssets',
+      'graphql_single_name' => 'campaignToolkitAsset',
+      'graphql_plural_name' => 'campaignToolkitAssets',
       'show_ui' => true,
       'show_in_menu' => true,
       'supports' => ['title', 'custom-fields']
@@ -26,4 +26,4 @@ function register_campaign_toolkit_partner_asset_post_type()
   );
 }
 
-add_action('init', 'register_campaign_toolkit_partner_asset_post_type');
+add_action('init', 'register_campaign_toolkit_asset_post_type');

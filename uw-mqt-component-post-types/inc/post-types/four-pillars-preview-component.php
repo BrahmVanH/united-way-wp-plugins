@@ -4,7 +4,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FOUR_PILLARS_PREVIEW_POST_TYPE_NAME', 'four_pillars_preview');
 
 add_action('init', function () {
     register_post_type(

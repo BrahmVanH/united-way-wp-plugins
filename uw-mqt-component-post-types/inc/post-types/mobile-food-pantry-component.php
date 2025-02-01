@@ -4,7 +4,6 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('MOBILE_FOOD_PANTRY_COMPONENT_POST_TYPE_NAME', 'mobile_food_pantry');
 
 add_action('init', function () {
     register_post_type(

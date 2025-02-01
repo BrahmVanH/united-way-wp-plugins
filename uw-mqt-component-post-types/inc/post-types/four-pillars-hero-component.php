@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FOUR_PILLARS_HERO_COMPONENT_POST_TYPE_NAME', 'four_pillars_hero');
+require_once plugin_dir_path(dirname(dirname(__FILE__))) . 'constants.php';
 
 add_action('init', function () {
     register_post_type(

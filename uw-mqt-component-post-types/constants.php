@@ -1,5 +1,9 @@
 <?php
-$impact_stats = define('IMPACT_STATISTICS_POST_TYPE_NAME', 'impact_statistics');
+if (defined('IMPACT_STATISTICS_POST_TYPE_NAME')) {
+    return;
+}
+
+define('IMPACT_STATISTICS_POST_TYPE_NAME', 'impact_statistics');
 
 define('COMMUNITY_RESILIENCY_COMPONENT_OUR_IMPACT_PAGE_POST_TYPE_NAME', 'comm_res_comp');
 
@@ -33,7 +37,9 @@ define('GIFT_ACCEPTANCE_POLICY_PDF_POST_TYPE_NAME', 'gift_policy_pdf');
 define('ADMIN_COSTS_PDF_POST_TYPE_NAME', 'admin_costs_pdf');
 define('GIRL_SCOUTS_COMPONENT_POST_TYPE_NAME', 'girl_scouts_comp');
 define('YMCA_COMPONENT_POST_TYPE_NAME', 'ymca_comp');
-define('CAMPAIGN_TOOLKIT_PARTNER_ASSET_POST_TYPE_NAME', 'campaign_toolkit_asset');
-define('CAMPAIGN_TOOLKIT_WORKPLACE_PACKET_PDF_POST_TYPE_NAME', 'workplace_packet_pdf');
-define('CAMPAIGN_TOOLKIT_RADIO_PSA_AUDIO_POST_TYPE_NAME', 'radio_psa_audio');
-define('CAMPAIGN_TOOLKIT_RADIO_PSA_TRANSCRIPT_POST_TYPE_NAME', 'radio_psa_transcript');
+define('CAMPAIGN_TOOLKIT_ASSET_POST_TYPE_NAME', 'campaign_tlkit_asst');
+define('UW_CONTACT_INFO_POST_TYPE_NAME', 'uw_contact_info');
+define('VALUES_HISTORY_POST_TYPE_NAME', 'values_history');
+define('IMPACT_CAROUSEL_POST_TYPE_NAME', 'impact_carousel');
+define('FAQ_POST_TYPE_NAME', 'faqs');
+define('INDIVIDUALS_PAGE_HERO_POST_TYPE_NAME', 'indivdls_page_hero');

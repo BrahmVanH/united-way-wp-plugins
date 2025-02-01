@@ -1,4 +1,5 @@
 <?php
+require_once plugin_dir_path(dirname(dirname(__FILE__))) . 'constants.php';
 
 if (!defined('ABSPATH')) {
   exit;
