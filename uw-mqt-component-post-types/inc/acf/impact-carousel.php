@@ -73,7 +73,7 @@ if (function_exists('acf_add_local_field_group')):
                 'key' => 'field_item_1_link',
                 'label' => 'Link',
                 'name' => 'link',
-                'type' => 'url',
+                'type' => 'text',
                 'required' => 0
               ],
               [
@@ -128,7 +128,7 @@ if (function_exists('acf_add_local_field_group')):
                 'key' => 'field_item_2_link',
                 'label' => 'Link',
                 'name' => 'link',
-                'type' => 'url',
+                'type' => 'text',
                 'required' => 0
               ],
               [
@@ -183,7 +183,7 @@ if (function_exists('acf_add_local_field_group')):
                 'key' => 'field_item_3_link',
                 'label' => 'Link',
                 'name' => 'link',
-                'type' => 'url',
+                'type' => 'text',
                 'required' => 0
               ],
               [

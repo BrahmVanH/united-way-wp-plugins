@@ -27,7 +27,7 @@ if (function_exists('acf_add_local_field_group')):
         'key' => 'field_ymca_link_1',
         'label' => 'Link 1',
         'name' => 'link_1',
-        'type' => 'url',
+        'type' => 'text',
         'required' => 1,
       ],
       [
@@ -41,7 +41,7 @@ if (function_exists('acf_add_local_field_group')):
         'key' => 'field_ymca_link_2',
         'label' => 'Link 2',
         'name' => 'link_2',
-        'type' => 'url',
+        'type' => 'text',
         'required' => 1,
       ],
       [

@@ -22,7 +22,7 @@ add_action('init', function () {
             'capability_type' => 'post',
             'has_archive' => false,
             'hierarchical' => false,
-            'menu_position' => null,
+            'menu_position' => 19,
             'supports' => ['title'],
             'show_in_graphql' => true,
             'graphql_single_name' => 'fourPillarsPreview',

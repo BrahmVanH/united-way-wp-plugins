@@ -25,7 +25,7 @@ function register_custom_post_types_impact_statistics()
       'not_found' => 'No impact statistics found',
       'not_found_in_trash' => 'No impact statistics found in Trash',
     ],
-    'menu_position' => 2,
+    'menu_position' => 10,
     'menu_icon' => 'dashicons-chart-bar',
     'hierarchical' => false,
     'rewrite' => ['slug' => 'impact-statistics'],

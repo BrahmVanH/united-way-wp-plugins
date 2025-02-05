@@ -20,7 +20,8 @@ function register_girl_scouts_component_post_type() {
             'graphql_plural_name' => 'girlScoutsComponents',
             'show_ui' => true,
             'show_in_menu' => true,
-            'supports' => ['title', 'custom-fields']
+            'supports' => ['title', 'custom-fields'],
+            'menu_position' => 12,
         ]
     );
 }

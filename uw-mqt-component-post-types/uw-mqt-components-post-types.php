@@ -17,10 +17,6 @@ require_once plugin_dir_path(__FILE__) . 'inc/post-types/hero-component-our-impa
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/our-impact-component-home-page.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/our-impact-statistics-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/partners-ticker-items.php';
-require_once plugin_dir_path(__FILE__) . 'inc/post-types/healthy-community-component.php';
-require_once plugin_dir_path(__FILE__) . 'inc/post-types/youth-opportunity-component.php';
-// require_once plugin_dir_path(__FILE__) . 'inc/post-types/financial-security-component.php';
-require_once plugin_dir_path(__FILE__) . 'inc/post-types/community-resiliency-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/four-pillars-preview-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/mobile-food-pantry-component.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/four-pillars-hero-component.php';
@@ -38,6 +34,9 @@ require_once plugin_dir_path(__FILE__) . 'inc/post-types/impact-carousel.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/campaign-toolkit-partner-asset.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/frequently-asked-questions.php';
 require_once plugin_dir_path(__FILE__) . 'inc/post-types/individuals-page-hero.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/get-involved-hero.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/partner-page-hero.php';
+require_once plugin_dir_path(__FILE__) . 'inc/post-types/home-page-hero.php';
 
 
 
@@ -57,11 +56,7 @@ function uw_mqt_init_custom_fields()
     require_once plugin_dir_path(__FILE__) . 'inc/acf/hero-component-our-impact-page.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/our-impact-component-home-page.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/our-impact-statistics-component.php';
-    require_once plugin_dir_path(__FILE__) . 'inc/acf/healthy-community-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/partners-ticker-items.php';
-    require_once plugin_dir_path(__FILE__) . 'inc/acf/youth-opportunity-component.php';
-    // require_once plugin_dir_path(__FILE__) . 'inc/acf/financial-security-component.php';
-    require_once plugin_dir_path(__FILE__) . 'inc/acf/community-resiliency-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/four-pillars-preview-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/mobile-food-pantry-component.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/four-pillars-hero-component.php';
@@ -79,6 +74,9 @@ function uw_mqt_init_custom_fields()
     require_once plugin_dir_path(__FILE__) . 'inc/acf/campaign-toolkit-partner-asset.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/frequently-asked-questions.php';
     require_once plugin_dir_path(__FILE__) . 'inc/acf/individuals-page-hero.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/get-involved-hero.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/partner-page-hero.php';
+    require_once plugin_dir_path(__FILE__) . 'inc/acf/home-page-hero.php';
   }
 }
 

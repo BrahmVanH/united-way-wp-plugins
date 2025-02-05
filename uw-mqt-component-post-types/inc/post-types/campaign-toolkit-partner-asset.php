@@ -21,7 +21,8 @@ function register_campaign_toolkit_asset_post_type()
       'graphql_plural_name' => 'campaignToolkitAssets',
       'show_ui' => true,
       'show_in_menu' => true,
-      'supports' => ['title', 'custom-fields']
+      'supports' => ['title', 'custom-fields'],
+      'menu_position' => 17,
     ]
   );
 }

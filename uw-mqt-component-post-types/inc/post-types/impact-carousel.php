@@ -26,7 +26,7 @@ function register_impact_carousel_post_type()
       'graphql_plural_name' => 'impactCarousels',
       'show_ui' => true,
       'show_in_menu' => true,
-      'menu_position' => 20,
+      'menu_position' => 8,
       'menu_icon' => 'dashicons-slides',
       'supports' => ['title', 'custom-fields'],
       'has_archive' => false

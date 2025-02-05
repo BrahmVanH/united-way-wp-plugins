@@ -20,7 +20,8 @@ function register_alice_report_pdf_post_type() {
             'graphql_plural_name' => 'aliceReportPdfs',
             'show_ui' => true,
             'show_in_menu' => true,
-            'supports' => ['title', 'custom-fields']
+            'supports' => ['title', 'custom-fields'],
+            'menu_position' => 15,
         ]
     );
 }

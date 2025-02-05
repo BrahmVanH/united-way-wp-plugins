@@ -33,7 +33,7 @@ function register_custom_post_types_hero_component_our_impact_page()
       'not_found' => 'No hero - our impact page components found',
       'not_found_in_trash' => 'No hero - our impact page components found in Trash',
     ],
-    'menu_position' => 4,
+    'menu_position' => 2,
     'menu_icon' => 'dashicons-admin-page',
     'hierarchical' => false,  // Changed to false since this is a component
     'rewrite' => ['slug' => 'hero-component-our-impact-page'],

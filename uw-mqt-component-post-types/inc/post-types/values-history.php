@@ -26,7 +26,7 @@ function register_values_history_post_type()
       'graphql_plural_name' => 'valuesHistories',
       'show_ui' => true,
       'show_in_menu' => true,
-      'menu_position' => 20,
+      'menu_position' => 16,
       'menu_icon' => 'dashicons-book-alt',
       'supports' => ['title', 'editor', 'custom-fields'], // Added 'editor' for title field
       'has_archive' => false

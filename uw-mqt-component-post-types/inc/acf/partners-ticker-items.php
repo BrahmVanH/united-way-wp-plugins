@@ -47,7 +47,7 @@ if (function_exists('acf_add_local_field_group')):
         'key' => 'field_partner_link',
         'label' => 'Link',
         'name' => 'link',
-        'type' => 'url',
+        'type' => 'text',
       ],
     ],
     'location' => [
@@ -59,7 +59,7 @@ if (function_exists('acf_add_local_field_group')):
         ]
       ]
     ],
-    'menu_order' => 0,
+    'menu_order' => 1,
     'position' => 'normal',
     'style' => 'default',
     'label_placement' => 'top',

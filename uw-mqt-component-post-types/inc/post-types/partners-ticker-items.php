@@ -34,7 +34,7 @@ function register_custom_post_types_partners_ticker_items_post_type()
       'not_found_in_trash' => 'No partners ticker items found in Trash',
       'menu_name' => 'Partners Ticker'
     ],
-    'menu_position' => 6,
+    'menu_position' => 7,
     'menu_icon' => 'dashicons-slides',
     'hierarchical' => false,
     'rewrite' => ['slug' => 'partners-ticker'], // Change from '/' to something specific

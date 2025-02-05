@@ -20,7 +20,8 @@ function register_how_to_contribute_component_post_type() {
             'graphql_plural_name' => 'howToContributeComponents',
             'show_ui' => true,
             'show_in_menu' => true,
-            'supports' => ['title', 'custom-fields']
+            'supports' => ['title', 'custom-fields'],
+            'menu_position' => 9,
         ]
     );
 }

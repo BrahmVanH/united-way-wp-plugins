@@ -20,7 +20,8 @@ function register_ymca_component_post_type() {
             'graphql_plural_name' => 'ymcaComponents',
             'show_ui' => true,
             'show_in_menu' => true,
-            'supports' => ['title', 'custom-fields']
+            'supports' => ['title', 'custom-fields'],
+            'menu_position' => 11,
         ]
     );
 }
